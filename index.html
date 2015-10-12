@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="exemploService">
+<head>
+	<meta charset="UTF-8">
+	<title>Service Angular - </title>
+</head>
+<link rel="stylesheet" href="assets/container.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<body ng-controller="meuControler">
+
+<div class="jumbotron">
+     <div class="container">
+      <div class="box">
+	     <img class="img-circle" src="{{ User.avatar_url }}" alt="">
+	     <hr>
+	     <ul>
+	        <li> Url:      {{ User.html_url  }}</li>
+	     	<li> Login:    {{ User.login     }} </li>
+	     	<li> Name:     {{ User.name      }} </li>
+	     	<li> Company:  {{ User.company   }} </li>
+	     	<li> Blog:     {{ User.blog      }} </li>
+	     	<li> Email:    {{ User.email     }} </li>
+	     	<li> Location: {{ User.location  }} </li>
+	     	<li> Seguindo: {{ User.following }}</li>
+	     </ul>
+      </div>   
+     </div>
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+<script src="assets/main.js"></script>
+</html>
